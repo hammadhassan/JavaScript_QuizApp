@@ -6,17 +6,18 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <div class="cont">
+    <div class="cont-main">
         <h1>Welcome to the Quiz</h1>
         <h2>Pakistan Super League</h2>
         <div class="one">
             <p id="q1">Q#1: Who is the highest Run scorer of PSL 2016?</p>
             <ul>
-                <li>Chris Gayle</li>
-                <li id="ans1">Umer Akmal</li>
-                <li>Ravi Bhopara</li>
+                <input type="radio" onclick="ques()">Chris Gayle</li>
+                <input type="radio" onclick="ques()" class="answer">Umer Akmal</li>
+                <input type="radio" onclick="ques()">Ravi Bhopara</li>
             </ul>
         </div>
+       <div class="cont"> 
         <p id="q2">Q#2: which is the most expensive team of PSL 2016?</p>
         <ul>
             <li>Islamabad United</li>
