@@ -14,7 +14,7 @@ var q11 = document.getElementById("q11");
 var q12 = document.getElementById("q12");
 */
 var score = 0;
-var div = document.getElementsByTagName("p");
+var div = document.getElementById("ques");
 var next = document.getElementsByClassName("cont");
 
 // begin_contain.className += " hidden";
@@ -25,18 +25,18 @@ function ques(ans) {
     alert("Correct Answer");
     score++;
     next[0].className = "show";
-    for (var i = 0; i = next.length; i++) {
-    div.className += " hidden";
- };
+    for (var i = 0; i < div.length; i++) {
+      div = div.className += " hidden";
+    };
+    //this.parentElement.style.display = "none";
     }
     else {
     alert("Wrong Answer");
     // document.getElementByClassName("cont").className += "display";   
     next[0].className = "show";
     // div.previousSibling.style.visibility = "hidden";
-    for (var i = 0; i < next.length; i++) {
-    div.className += " hidden";
- };
+    // div.className += " hidden";
+    this.parentElement.style.display = "none";
     }
  }; 
 if (score <= 1) {
