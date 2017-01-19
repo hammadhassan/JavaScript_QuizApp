@@ -13,3 +13,6 @@ li {
 li:hover {
     background-color: lawngreen;
 }
+.hidden {
+    display: none;
+}
