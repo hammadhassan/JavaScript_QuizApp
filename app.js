@@ -12,20 +12,17 @@ var q9 = document.getElementById("q9");
 var q10 = document.getElementById("q10");
 var q11 = document.getElementById("q11");
 var q12 = document.getElementById("q12");
-*/
+
 var currentQuestion = 0,
     score = 0,
     askingQuestion = true;
+*/
 
-
-
-function ques() {
-    if (radio[i].value == quiz[currentQuestion].correct) {
-        correctIndex = i;
-    //if (this.className == "answer") {
+function ques(ans) {
+    if (ans =='correct') {
     alert("Correct Answer");
     }
     else {
     alert("Wrong Answer");   
     }
-    }; 
+ }; 
