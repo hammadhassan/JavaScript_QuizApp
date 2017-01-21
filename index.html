@@ -7,10 +7,10 @@
 </head>
 <body>
     <div class="cont-main">
-        <h1>Welcome to the Quiz</h1>
-        <h2>Pakistan Super League</h2>
-        <div id="ques">
-        <div class="one" >
+        <h1>Welcome to the Quiz of</h1>
+        <h2><img src="images/psl.png">Pakistan Super League</h2>
+        <div class="">
+        <div class="show">
             <p id="q1">Q#1: Who is the highest Run scorer of PSL 2016?</p>
             <ul>
                 <li onclick="ques()">Chris Gayle</li>
@@ -19,9 +19,9 @@
             </ul>
         </div>
         </div>
-        <div>
-       <div class="cont"> 
-            <p id="q2">Q#2: which is the most expensive team of PSL 2016?</p>
+        <div class="">
+       <div class="cont" > 
+            <p id="q2">Q#2: Which is the most expensive team of PSL 2016?</p>
             <ul>
                 <li onclick="ques()">Islamabad United</li>
                 <li onclick="ques('correct')" id="answer">Karachi Kings</li>
@@ -31,22 +31,27 @@
             </ul>
        </div>
         </div>
+        <div class="">
        <div class="cont"> 
-            <p id="q3">Q#3: Who is the icon player od Peshawar Zalmi?</p>
+            <p id="q3">Q#3: Who is the icon player of Peshawar Zalmi?</p>
             <ul>
                 <li onclick="ques()">Mohammad Hafeez</li>
-                <li onclick="ques()">Darren Sammy</li>
                 <li onclick="ques('correct')" id="answer">Shahid Afridi</li>
+                <li onclick="ques()">Darren Sammy</li>
             </ul> 
        </div>
+        </div>
+        <div class="">
        <div class="cont">
             <p id="q4">Q#4: Who scored century in PSL 2016?</p>
             <ul>
                 <li onclick="ques()">Chris Gayle</li>
-                <li onclick="ques()">Umer Akmal</li>
                 <li onclick="ques('correct')" id="answer">Sharjeel Khan</li>
+                <li onclick="ques()">Umer Akmal</li>
             </ul> 
        </div>
+        </div>
+       <div class="">
        <div class="cont">
             <p id="q5">Q#5: Which team won the inaugural HPL PSL 2016?</p>
             <ul>
@@ -57,6 +62,8 @@
                 <li onclick="ques()">Quetta Gladiators</li>
             </ul> 
        </div>
+       </div>
+       <div class="">
        <div class="cont">
             <p id="q6">Q#6: Who is the player of the tournament of PSL 2016?</p>
             <ul>
@@ -65,6 +72,8 @@
                 <li onclick="ques('correct')" id="answer">Ravi Bhopara</li>
             </ul> 
        </div>
+       </div>
+       <div class="">
         <div class="cont">
             <p id="q7">Q#7: Who took most wickets in PSL 2016?</p>
             <ul>
@@ -73,6 +82,8 @@
                 <li onclick="ques()">Imad Waseem</li>
             </ul>
         </div>
+       </div>
+       <div class="">
         <div class="cont"> 
             <p id="q8">Q#8: Number of Sixes hits in PSL 2016?</p>
             <ul>
@@ -81,6 +92,8 @@
                 <li onclick="ques()">230</li>
             </ul> 
         </div>
+       </div>
+       <div class="">
         <div class="cont">
             <p id="q9">Q#9: Who is the captain of Karachi Kings?</p>
             <ul>
@@ -89,6 +102,8 @@
                 <li onclick="ques()">Shoaib Malik</li>
             </ul> 
         </div>
+       </div>
+       <div class="">
         <div class="cont">
             <p id="q10">Q#10: Slogan of Quetta Gladiators?</p>
             <ul>
@@ -97,6 +112,8 @@
                 <li onclick="ques()">Dilon K Badshah</li>
             </ul> 
         </div>
+       </div>
+       <div class="">
         <div class="cont">
             <p id="q11">Q#11: Who is the mentor of Islamabad United</p>
             <ul>
@@ -105,6 +122,8 @@
                 <li onclick="ques()">Deam Johnes</li>
             </ul>
         </div>
+       </div>
+       <div class="">
         <div class="cont">    
             <p id="q12">Q#12: Which is the best match of PSL 2016</p>
             <ul>
@@ -113,10 +132,11 @@
                 <li onclick="ques()">Lahore Qalandars vs Karachi Kings (Qualifier for Semi Finals)</li>
             </ul>  
         </div>
-        <button onclick="result()">result</button>
+       </div>
+       <button class="cont" onclick="result()">Result</button>
         <div class="cont">
         <p>Result</p>
-        <span></span>
+        <p id="result"></p>
         </div>
     </div>
     <script src="app.js"></script>

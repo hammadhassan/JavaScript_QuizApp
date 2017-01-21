@@ -1,18 +1,50 @@
 body {
-    background-color: turquoise;
+    background-color: white;
+    font-family: Malina-Light;
+    
 }
+@font-face {
+    font-family: Malina-Light;
+    src: url(font/Malina_Light.ttf);
+    } 
 .cont {
     display: none;
+}
+ul {
+    margin-left: -40px; 
 }
 li {
     list-style: none;
     font-weight: bold;
-    background-color: powderblue;
-    width: 50%;
+    background-color: #6EAF25;
+    border: 2px solid black;
+    font-size: 21px;
+    text-align: center;
+    color: white;
+    width: 70%;
 }
 li:hover {
-    background-color: lawngreen;
+    background-color: #FECB00;
+    color: black;
 }
 .hidden {
     display: none;
+}
+.show {
+    display: block;
+}
+.cont-main {
+    margin: 0 auto;
+    height: 400px;
+    width: 400px;
+}
+p {
+    font-size: 24px;
+    font-weight: bold;
+    font-style: oblique;
+    border: 2px solid black;
+    width: 70%;
+    background-color: #006C35;
+    color: white;
+    text-align: center;
 }
