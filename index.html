@@ -8,8 +8,8 @@
 <body>
     <div class="cont-main">
         <h1>Welcome to the Quiz of</h1>
-        <h2><img src="images/psl.png">Pakistan Super League</h2>
-        <div class="">
+        <h2>Pakistan Super League</h2>
+        <img src="images/psl.png">
         <div class="show">
             <p id="q1">Q#1: Who is the highest Run scorer of PSL 2016?</p>
             <ul>
@@ -19,7 +19,6 @@
             </ul>
         </div>
         </div>
-        <div class="">
        <div class="cont" > 
             <p id="q2">Q#2: Which is the most expensive team of PSL 2016?</p>
             <ul>
@@ -31,7 +30,6 @@
             </ul>
        </div>
         </div>
-        <div class="">
        <div class="cont"> 
             <p id="q3">Q#3: Who is the icon player of Peshawar Zalmi?</p>
             <ul>
@@ -41,7 +39,7 @@
             </ul> 
        </div>
         </div>
-        <div class="">
+        
        <div class="cont">
             <p id="q4">Q#4: Who scored century in PSL 2016?</p>
             <ul>
@@ -51,7 +49,7 @@
             </ul> 
        </div>
         </div>
-       <div class="">
+       
        <div class="cont">
             <p id="q5">Q#5: Which team won the inaugural HPL PSL 2016?</p>
             <ul>
@@ -62,8 +60,6 @@
                 <li onclick="ques()">Quetta Gladiators</li>
             </ul> 
        </div>
-       </div>
-       <div class="">
        <div class="cont">
             <p id="q6">Q#6: Who is the player of the tournament of PSL 2016?</p>
             <ul>
@@ -73,7 +69,7 @@
             </ul> 
        </div>
        </div>
-       <div class="">
+       
         <div class="cont">
             <p id="q7">Q#7: Who took most wickets in PSL 2016?</p>
             <ul>
@@ -82,8 +78,6 @@
                 <li onclick="ques()">Imad Waseem</li>
             </ul>
         </div>
-       </div>
-       <div class="">
         <div class="cont"> 
             <p id="q8">Q#8: Number of Sixes hits in PSL 2016?</p>
             <ul>
@@ -92,8 +86,6 @@
                 <li onclick="ques()">230</li>
             </ul> 
         </div>
-       </div>
-       <div class="">
         <div class="cont">
             <p id="q9">Q#9: Who is the captain of Karachi Kings?</p>
             <ul>
@@ -102,18 +94,14 @@
                 <li onclick="ques()">Shoaib Malik</li>
             </ul> 
         </div>
-       </div>
-       <div class="">
         <div class="cont">
-            <p id="q10">Q#10: Slogan of Quetta Gladiators?</p>
+            <p id="q10">Q#10: Which is the Slogan of Quetta Gladiators?</p>
             <ul>
-                <li onclick="ques('correct')" id="answer">Shan e Pakistan</li>
+                <li onclick="ques('correct')" id="answer">Shan-e-Pakistan</li>
                 <li onclick="ques()">Dama Dam Mast</li>
                 <li onclick="ques()">Dilon K Badshah</li>
             </ul> 
-        </div>
        </div>
-       <div class="">
         <div class="cont">
             <p id="q11">Q#11: Who is the mentor of Islamabad United</p>
             <ul>
@@ -122,21 +110,21 @@
                 <li onclick="ques()">Deam Johnes</li>
             </ul>
         </div>
-       </div>
-       <div class="">
         <div class="cont">    
             <p id="q12">Q#12: Which is the best match of PSL 2016</p>
             <ul>
-                <li onclick="ques()">Karachi Kings vs Peshawar Zalmi (Group Match)</li>
-                <li onclick="ques('correct')" id="answer">Quetta Gladiators vs Peshawar Zalmi (Semi Final)</li>
-                <li onclick="ques()">Lahore Qalandars vs Karachi Kings (Qualifier for Semi Finals)</li>
+                <li onclick="ques()">Karachi Kings vs Peshawar Zalmi (Group Match) (Zalim won)</li>
+                <li onclick="ques('correct')" id="answer">Quetta Gladiators vs Peshawar Zalmi (Semi Final) (Gladiators won)</li>
+                <li onclick="ques()">Lahore Qalandars vs Karachi Kings (Qualifier for Semi Finals) (Kings won)</li>
             </ul>  
         </div>
+       <div class="cont">
+       <button id= "result" onclick="result()">Result</button>
        </div>
-       <button class="cont" onclick="result()">Result</button>
-        <div class="cont">
+       <div class="cont">
         <p>Result</p>
-        <p id="result"></p>
+        <p id="showresult"></p>
+        <button id="play">Play Again</button>
         </div>
     </div>
     <script src="app.js"></script>

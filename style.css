@@ -1,7 +1,6 @@
 body {
     background-color: white;
-    font-family: Malina-Light;
-    
+    font-family: Malina-Light; 
 }
 @font-face {
     font-family: Malina-Light;
@@ -10,8 +9,15 @@ body {
 .cont {
     display: none;
 }
+.show {
+    margin: auto;
+    width: 400px;
+}
 ul {
     margin-left: -40px; 
+}
+h1, h2 {
+    text-align: center;
 }
 li {
     list-style: none;
@@ -21,7 +27,7 @@ li {
     font-size: 21px;
     text-align: center;
     color: white;
-    width: 70%;
+    width: 400px;
 }
 li:hover {
     background-color: #FECB00;
@@ -29,9 +35,6 @@ li:hover {
 }
 .hidden {
     display: none;
-}
-.show {
-    display: block;
 }
 .cont-main {
     margin: 0 auto;
@@ -43,8 +46,34 @@ p {
     font-weight: bold;
     font-style: oblique;
     border: 2px solid black;
-    width: 70%;
+    width: 400px;
     background-color: #006C35;
     color: white;
     text-align: center;
+}
+#play{
+    background-color: #34b1b0;
+    border: 1px none;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    height: 33px;
+}
+#result {
+    background-color: #34b1b0;
+    border: 1px none;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    height: 33px;
+    width: 100px;
+    /*margin-left: 467px;*/
+}
+#result:hover {
+    background-color: #006C35;
+}
+#play:hover {
+    background-color: #006C35;
 }

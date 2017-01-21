@@ -1,9 +1,7 @@
 var score = 0;
 var next = document.getElementsByClassName("cont");
-
 var div = document.getElementsByTagName("div");
-//var classes = document.getElementsByClassName("");
-
+var show = document.getElementsByClassName("show");
 function ques(ans) {
     if (ans =="correct") {
     //alert("Correct Answer");
@@ -13,20 +11,27 @@ function ques(ans) {
     // div[i].className = "hidden";
     // };
     next[0].className = "show";
+    //div.previousSibling.className = "hidden"++;
     }
     else {
     // alert("Wrong Answer");
     next[0].className = "show";
-    // div[1].className = "hidden";
+    //div[1].className = "hidden";
     }
+    var shown = show[0];
+    shown.className = "hidden";
+    shown.nextElementSibling.className = "show";
  }; 
 
-//var span = document.getElementsByTagName("span");
 function result() {
-    var num = ((score * (8.3/100)) * 100);
+    var num = (score * 8.3333);
     var res = Math.ceil(num);
-    document.getElementById("result").innerHTML = ("<b>Your Score is </b>" + res + "%");
-    alert(res);
+    document.getElementById("showresult").innerHTML = ("<b>Your Score is </b>" + res + "%");
+    var shown = show[0];
+    shown.nextElementSibling.className = "show";
     };
 
- 
+ var playagain = document.getElementById("play");
+ playagain.onclick = function () {
+    location.reload();
+}
