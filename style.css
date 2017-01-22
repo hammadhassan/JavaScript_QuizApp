@@ -23,11 +23,12 @@ li {
     list-style: none;
     font-weight: bold;
     background-color: #6EAF25;
-    border: 2px solid black;
+    border-bottom: 2px solid black;
     font-size: 21px;
     text-align: center;
     color: white;
     width: 400px;
+    border-radius: 7px;
 }
 li:hover {
     background-color: #FECB00;
@@ -41,15 +42,16 @@ li:hover {
     height: 400px;
     width: 400px;
 }
-p {
+#q1, #q2, #q3, #q4, #q5, #q6, #q7, #q8, #q9, #q10, #q11, #q12, #results, #showresult {
     font-size: 24px;
     font-weight: bold;
     font-style: oblique;
-    border: 2px solid black;
+    border-bottom: 2px solid black;
     width: 400px;
     background-color: #006C35;
     color: white;
     text-align: center;
+    border-radius: 7px;
 }
 #play{
     background-color: #34b1b0;
@@ -69,11 +71,51 @@ p {
     font-weight: bold;
     height: 33px;
     width: 100px;
-    /*margin-left: 467px;*/
 }
 #result:hover {
     background-color: #006C35;
 }
 #play:hover {
     background-color: #006C35;
+}
+#time {
+    background-color: #34b1b0;
+    border: 1px none;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    height: 33px;
+    width: 100px;
+}
+#time:hover {
+    background-color: #006C35;
+}
+.quest {
+    float: left;
+    display: block;
+    border: 2px double #393939;
+    border-radius: 25px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-weight: bold;
+    font-style: oblique;
+    overflow: hidden;
+}
+h3 {
+    background-color: #34b1b0;
+    color: white;
+    height: 45px;
+    margin: auto;
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 7px;
+    overflow: hidden;
+}
+#timer, #quesnum {
+    font-size: 20px;
+    font-weight: bold;
+    margin: auto;
+    padding-top: 11px;
 }
